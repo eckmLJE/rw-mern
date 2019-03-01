@@ -1,0 +1,30 @@
+{
+  "name": "rw-mern",
+  "version": "1.0.0",
+  "description": "https://www.robinwieruch.de/mongodb-express-node-rest-api/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eckmLJE/rw-mern.git"
+  },
+  "keywords": [],
+  "author": "Lucas Eckman <lucas.eckman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eckmLJE/rw-mern/issues"
+  },
+  "homepage": "https://github.com/eckmLJE/rw-mern#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0"
+  }
+}
