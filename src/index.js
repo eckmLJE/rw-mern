@@ -1,5 +1,17 @@
 import "dotenv/config";
+import cors from "cors";
+import express from "express";
 
-console.log("Hello Node.js project.");
+const app = express();
 
-console.log(process.env.MY_SECRET);
+app.use(cors());
+// Before production, set up cors whitelisting
+// https://github.com/expressjs/cors
+
+app.get("/", (req, res) => {
+  res.send("hello world!");
+});
+
+app.listen(3000, () =>
+  console.log(`example app listening on port ${process.env.PORT}!`)
+);
